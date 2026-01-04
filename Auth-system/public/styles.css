@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.gradient-circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+.blue-square {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}
+
+.comillas-negras {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.lock-icon {
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #0072ff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+a {
+  color: #0072ff;
+  text-decoration: none;
+}
+
+
+
+
+/* Dashboard Styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.gradient-circle-small {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #ff7e5f, #feb47b);
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f4f4f4;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.blue-square-small {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.section {
+  margin-bottom: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  margin: 10px 0;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.settings-form button {
+  background: #0072ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.settings-form button:hover {
+  background: #005bb5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
